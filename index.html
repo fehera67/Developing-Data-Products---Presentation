@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Developing Data Products Presentation</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Developing Data Products Presentation">
+  <meta name="author" content="Andras Feher">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/prettify/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="libraries/widgets/bootstrap/css/bootstrap.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Developing Data Products Presentation</h1>
+    <h2>MPG - Manual vs. Automatic Transmission</h2>
+    <p>Andras Feher<br/>Pitch Presentation</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Developing Data Products Project Descrition</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>The application predicts the mpg of various cars using the mtcars data set.</li>
+<li>The application is available on shinyapps.io</li>
+<li>Application url:  <a href="http://fehera67.shinyapps.io/shapp">http://fehera67.shinyapps.io/shapp</a></li>
+<li>github url: <a href="https://github.com/fehera67/Developing-Data-Products---Shiny-Application/tree/master">https://github.com/fehera67/Developing-Data-Products---Shiny-Application/tree/master</a></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>The mtcars data set</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Motor Trend Car Magazine Road Tests Data</h3>
+
+<ul>
+<li>Data is from the 1974 Motor Trend US magazine containing MPG and other characheristics for 32 automobiles (1973–74 models).</li>
+</ul>
+
+<h3>Source</h3>
+
+<ul>
+<li>Henderson and Velleman (1981), Building multiple regression models interactively. Biometrics, 37, 391–411.</li>
+</ul>
+
+<pre><code>##                    mpg cyl disp  hp drat    wt  qsec vs am gear carb
+## Mazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1    4    4
+## Mazda RX4 Wag     21.0   6  160 110 3.90 2.875 17.02  0  1    4    4
+## Datsun 710        22.8   4  108  93 3.85 2.320 18.61  1  1    4    1
+## Hornet 4 Drive    21.4   6  258 110 3.08 3.215 19.44  1  0    3    1
+## Hornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>mtcars dataset fields</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Fields in the data set:</h3>
+
+<ul>
+<li>mpg  : Miles/(US) gallon</li>
+<li>cyl  : Number of cylinders</li>
+<li>disp : Displacement (cu.in.)</li>
+<li>hp   : Gross horsepower</li>
+<li>drat : Rear axle ratio</li>
+<li>wt   : Weight (lb/1000)</li>
+<li>qsec : 1/4 mile time</li>
+<li>vs   : V/S</li>
+<li>am   : Transmission (0 = automatic, 1 = manual)</li>
+<li>gear : Number of forward gears</li>
+<li>carb : Number of carburators</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Shiny application description</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>The application fits a linear model with the selected predictor and displays the summary along with the plot including the abline.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Developing Data Products Project Descrition'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='The mtcars data set'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='mtcars dataset fields'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Shiny application description'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  <script src="libraries/widgets/bootstrap/js/bootstrap.min.js"></script>
+<script src="libraries/widgets/bootstrap/js/bootbox.min.js"></script>
+
+  <script>  
+  $(function (){ 
+    $("#example").popover(); 
+    $("[rel='tooltip']").tooltip(); 
+  });  
+  </script>  
+  <!-- Google Prettify -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/188.0.0/prettify.js"></script>
+  <script src='libraries/highlighters/prettify/js/lang-r.js'></script>
+  <script>
+    var pres = document.getElementsByTagName("pre");
+    for (var i=0; i < pres.length; ++i) {
+      pres[i].className = "prettyprint linenums";
+    }
+    prettyPrint();
+  </script>
+  <!-- End Google Prettify --> 
+  </html>
